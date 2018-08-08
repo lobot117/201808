@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+         *{margin: 0; padding: 0;}
+         a{text-decoration: none;color: inherit;}
+         ul, li{list-style: none;}
+        .slide{width: 1200px;margin: 20px; height: 400px; position: relative; overflow: hidden}
+        .slide ul{height: 400px;}
+        .slide li{height: 400px}
+        .slide li:nth-child(1){background: #faa;}
+        .slide li:nth-child(2){background: #afa;}
+        .slide li:nth-child(3){background: #aaf;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="0807-4.js"></script>
+</head>
+<body>
+    <div class="slide" data-type="right2left" data-delay="1000" data-time="300" data-arrow="false" data-bullet="false">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="slide" data-type="btm2top" data-delay="1000" data-time="300" data-arrow="true" data-bullet="false">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="slide" data-type="fade" data-delay="1000" data-time="300" data-arrow="true" data-bullet="true">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
